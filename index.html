@@ -12,10 +12,9 @@
     <p class="leyenda">Los elementos que contengan el símbolo (<span>*</span>) deberán ser completados obligatoriamente.</p>
     <form action="" method="">
         <table>
-            <fieldset>
-                <legend>Datos personales</legend>
-                
-            </fieldset>
+            <tr>
+                <th colspan="2">Datos personales</th>
+            </tr>
             <tr>
                 <td class="alinear"><label for="nombre">Nombre<span>*</span>: </label></td>
                 <td><input type="text" id="nombre" required/></td>
@@ -29,7 +28,7 @@
                 <td class="alinear"><label for="ape1">Primer apellido<span>*</span>: </label></td>
                 <td><input type="text" id="ape1" required/></td>
             </tr>
-            <tr id="errorape1">
+            <tr id="errorape1" class="escondido">
                 <td colspan="2"><p class="error">El apellido solo debe contener letras, empezar por mayúscula y tener una longitud de 3-20 caracteres.</p></td>
             </tr>
 
@@ -47,6 +46,18 @@
             </tr>
             <tr id="errorcorreo" class="escondido">
                 <td colspan="2"><p class="error">El correo electrónico introducido no es válido.</p></td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Datos del usuario</th>
+            </tr>
+
+            <tr>
+                <td class="alinear"><label for="user">Nombre de usuario<span>*</span>: </label></td>
+                <td><input type="text" id="user" required/></td>
+            </tr>
+            <tr id="erroruser" class="escondido">
+                <td colspan="2"><p class="error">Error usuario :].</p></td>
             </tr>
 
             <tr>
