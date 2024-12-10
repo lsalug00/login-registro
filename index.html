@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <hr>
+    <p class="leyenda">Los elementos que contengan el símbolo (<span>*</span>) deberán ser completados obligatoriamente.</p>
+    <form action="" method="">
+        <table>
+            <tr>
+                <td class="alinear"><label for="nombre">Nombre<span>*</span>: </label></td>
+                <td><input type="text" id="nombre" required/></td>
+                
+            </tr>
+            <tr id="errornombre" class="escondido">
+                <td colspan="2"><p class="error">El nombre solo debe contener letras, empezar por mayúscula y tener una longitud de 3-20 caracteres.</p></td>
+            </tr>
+
+            <tr>
+                <td><label for="ape1">Primer apellido<span>*</span>: </label></td>
+                <td><input type="text" id="ape1" required/></td>
+            </tr>
+            <tr id="errorape1">
+                <td colspan="2"><p class="error">El apellido solo debe contener letras, empezar por mayúscula y tener una longitud de 3-20 caracteres.</p></td>
+            </tr>
+
+            <tr>
+                <td><label for="ape2">Segundo apellido: </label></td>
+                <td><input type="text" id="ape2"/></td>
+            </tr>
+            <tr id="errorape2" class="escondido">
+                <td colspan="2"><p class="error">El segundo apellido solo debe contener letras, empezar por mayúscula y tener una longitud de 3-20 caracteres.</p></td>
+            </tr>
+
+            <tr>
+                <td><label for="correo">Correo electrónico<span>*</span>: </label></td>
+                <td><input type="text" id="correo" placeholder="ejemplocorreo@correo.com" required/></td>
+            </tr>
+            <tr id="errorcorreo" class="escondido">
+                <td colspan="2"><p class="error">El correo electrónico introducido no es válido.</p></td>
+            </tr>
+
+            <tr>
+                <td><label for="contra">Contraseña<span>*</span>: </label></td>
+                <td><input type="text" id="contra" required/></td>
+            </tr>
+            <tr id="errorcontra" class="escondido">
+                <td colspan="2"><p class="error">La contraseña debe tener una longitud de al menos 8 caracteres, una minúscula, una mayúscula, un número y un símbolo.</p></td>
+            </tr>
+
+            <tr>
+                <td><label for="confContra">Confirmación de contraseña<span>*</span>: </label></td>
+                <td><input type="text" id="confContra" required/></td>
+            </tr>
+            <tr id="errorconfContra" class="escondido">
+                <td colspan="2"><p class="error">Las contraseñas no coinciden.</p></td>
+            </tr>
+
+            <tr>
+                <td><label for="politica">Aceptar la <a href="">política de privacidad</a><span>*</span>: </label></td>
+                <td><input type="checkbox" id="politica" required/></td>
+            </tr>
+            <tr id="errorpolitica" class="escondido">
+                <td colspan="2"><p class="error">Para continuar, acepte la política de privacidad.</p></td>
+            </tr>
+
+            <tr>
+                <th colspan="2"><input type="submit" id="submit" value="Enviar"></th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

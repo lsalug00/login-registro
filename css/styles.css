@@ -1,0 +1,71 @@
+body{
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.leyenda{
+    font-size: 1rem;
+    text-align: center;
+    color: gray;
+}
+
+span{
+    color: red;
+}
+
+table{
+    margin: 30px auto;
+    
+}
+
+td{
+    border: 2px solid black;
+    
+}
+.alinear{
+    text-align: right;
+}
+
+
+input{
+    margin: 10px 10px;
+}
+
+input[type=text] {
+    width: 250px;
+}
+
+input[type=checkbox] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+input[type=submit] {
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.errorInput{
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+.errorCheckbox{
+    outline: 2px solid red; 
+}
+
+.error{
+    display: flex;
+    
+    font-size: 1rem;
+    color: red;
+    margin-top: -5px;
+}
+
+.escondido{
+    display: none;
+}
