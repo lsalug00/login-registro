@@ -22,14 +22,9 @@ table{
     
 }
 
-td{
-    border: 2px solid black;
-    
-}
 .alinear{
     text-align: right;
 }
-
 
 input{
     margin: 10px 10px;
@@ -60,7 +55,6 @@ input[type=submit] {
 
 .error{
     display: flex;
-    
     font-size: 1rem;
     color: red;
     margin-top: -5px;

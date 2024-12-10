@@ -12,6 +12,10 @@
     <p class="leyenda">Los elementos que contengan el símbolo (<span>*</span>) deberán ser completados obligatoriamente.</p>
     <form action="" method="">
         <table>
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+            </fieldset>
             <tr>
                 <td class="alinear"><label for="nombre">Nombre<span>*</span>: </label></td>
                 <td><input type="text" id="nombre" required/></td>
@@ -22,7 +26,7 @@
             </tr>
 
             <tr>
-                <td><label for="ape1">Primer apellido<span>*</span>: </label></td>
+                <td class="alinear"><label for="ape1">Primer apellido<span>*</span>: </label></td>
                 <td><input type="text" id="ape1" required/></td>
             </tr>
             <tr id="errorape1">
@@ -30,7 +34,7 @@
             </tr>
 
             <tr>
-                <td><label for="ape2">Segundo apellido: </label></td>
+                <td class="alinear"><label for="ape2">Segundo apellido: </label></td>
                 <td><input type="text" id="ape2"/></td>
             </tr>
             <tr id="errorape2" class="escondido">
@@ -38,7 +42,7 @@
             </tr>
 
             <tr>
-                <td><label for="correo">Correo electrónico<span>*</span>: </label></td>
+                <td class="alinear"><label for="correo">Correo electrónico<span>*</span>: </label></td>
                 <td><input type="text" id="correo" placeholder="ejemplocorreo@correo.com" required/></td>
             </tr>
             <tr id="errorcorreo" class="escondido">
@@ -46,7 +50,7 @@
             </tr>
 
             <tr>
-                <td><label for="contra">Contraseña<span>*</span>: </label></td>
+                <td class="alinear"><label for="contra">Contraseña<span>*</span>: </label></td>
                 <td><input type="text" id="contra" required/></td>
             </tr>
             <tr id="errorcontra" class="escondido">
@@ -54,7 +58,7 @@
             </tr>
 
             <tr>
-                <td><label for="confContra">Confirmación de contraseña<span>*</span>: </label></td>
+                <td class="alinear"><label for="confContra">Confirmación de contraseña<span>*</span>: </label></td>
                 <td><input type="text" id="confContra" required/></td>
             </tr>
             <tr id="errorconfContra" class="escondido">
@@ -62,7 +66,7 @@
             </tr>
 
             <tr>
-                <td><label for="politica">Aceptar la <a href="">política de privacidad</a><span>*</span>: </label></td>
+                <td class="alinear"><label for="politica">Aceptar la <a href="">política de privacidad</a><span>*</span>: </label></td>
                 <td><input type="checkbox" id="politica" required/></td>
             </tr>
             <tr id="errorpolitica" class="escondido">
