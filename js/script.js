@@ -78,7 +78,7 @@ function validarContrasena() {
 }
 
 function validarConfirmacionContrasena() {
-    const esValido = false;
+    let esValido = false;
     if(validarContrasena()){
         const contra = document.getElementById("contra");
         const confContra = document.getElementById("confContra");
