@@ -1,8 +1,6 @@
 document.getElementById("submit").addEventListener("click", function (event) {
-    // Evitar envío del formulario si hay errores
     let formValido = true;
 
-    // Validaciones individuales
     if (!validarNombre()) formValido = false;
     if (!validarPrimerApellido()) formValido = false;
     if (!validarSegundoApellido()) formValido = false;
@@ -12,7 +10,6 @@ document.getElementById("submit").addEventListener("click", function (event) {
     if (!validarConfirmacionContrasena()) formValido = false;
     if (!validarPoliticaPrivacidad()) formValido = false;
 
-    // Prevenir el envío si el formulario no es válido
     if (formValido) {
         alert("Formulario enviado con éxito.");
     }else{
@@ -33,7 +30,7 @@ function validarNombre() {
 function validarPrimerApellido() {
     const ape1 = document.getElementById("ape1");
     const errorApe1 = document.getElementById("errorape1");
-    const regexApellido = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+([-\s](de|del|de\sla)?\s?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)?$/;
+    const regexApellido = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+([-\s](de(\s)?(la|los)?|del)?\s?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)?$/;
     const esValido = regexApellido.test(ape1.value) && ape1.value.length >= 3 && ape1.value.length <= 50;
 
     manejarErrores(ape1, errorApe1, esValido);
@@ -43,8 +40,8 @@ function validarPrimerApellido() {
 function validarSegundoApellido() {
     const ape2 = document.getElementById("ape2");
     const errorApe2 = document.getElementById("errorape2");
-    const regexApellido = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+([-\s](de|del|de\sla)?\s?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)?$/;
-    const esValido = regexApellido.test(ape2.value) && ape2.value.length >= 3 && ape2.value.length <= 50;
+    const regexApellido = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+([-\s](de(\s)?(la|los)?|del)?\s?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)?$/;
+    const esValido = ape2.value === "" || (regexApellido.test(ape2.value) && ape2.value.length >= 3 && ape2.value.length <= 50);
 
     manejarErrores(ape2, errorApe2, esValido);
     return esValido;
@@ -81,12 +78,15 @@ function validarContrasena() {
 }
 
 function validarConfirmacionContrasena() {
-    const contra = document.getElementById("contra");
-    const confContra = document.getElementById("confContra");
-    const errorConfContra = document.getElementById("errorconfContra");
-    const esValido = confContra.value === contra.value;
+    const esValido = false;
+    if(validarContrasena()){
+        const contra = document.getElementById("contra");
+        const confContra = document.getElementById("confContra");
+        const errorConfContra = document.getElementById("errorconfContra");
+        esValido = confContra.value === contra.value;
 
-    manejarErrores(confContra, errorConfContra, esValido);
+        manejarErrores(confContra, errorConfContra, esValido);
+    }
     return esValido;
 }
 
