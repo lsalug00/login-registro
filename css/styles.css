@@ -43,7 +43,7 @@ input[type=submit] {
     font-weight: bold;
     font-size: 1rem;
     margin-top: 30px;
-    width: 100px;
+    width: 130px;
     height: 35px;
     transition-duration: 0.15s;
     background-color: white;
@@ -68,9 +68,17 @@ input[type=submit]:active {
 }
 
 .errorCheckbox{
-    outline: 2px solid red;
-    outline-offset: 3px;
-    border-radius: 5px;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        /* Cuando NO está marcado, el borde será rojo */
+        border: 2px solid red;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #fff;
+        vertical-align: middle;
 }
 
 .error{
