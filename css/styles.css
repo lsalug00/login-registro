@@ -68,11 +68,14 @@ input[type=submit]:active {
 }
 
 .errorCheckbox{
-    outline: 2px solid red; 
+    outline: 2px solid red;
+    outline-offset: 3px;
+    border-radius: 5px;
 }
 
 .error{
     display: flex;
+    justify-content: center;
     font-size: 1rem;
     color: red;
     margin-top: -5px;
