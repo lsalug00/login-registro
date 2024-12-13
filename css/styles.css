@@ -34,10 +34,7 @@ input[type=text] {
     width: 250px;
 }
 
-input[type=checkbox] {
-    width: 1.2rem;
-    height: 1.2rem;
-}
+
 
 input[type=submit] {
     font-weight: bold;
@@ -53,8 +50,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
     cursor: pointer;
-    transform: translateY(-2px);
-    box-shadow: 2px 4px gray;
+    transform: translateY(-1px);
+    box-shadow: 2px 3px gray;
 }
 
 input[type=submit]:active {
@@ -67,18 +64,50 @@ input[type=submit]:active {
     border-radius: 3px;
 }
 
-.errorCheckbox{
+input[type="checkbox"] {
     -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        width: 20px;
-        height: 20px;
-        /* Cuando NO está marcado, el borde será rojo */
-        border: 2px solid red;
-        border-radius: 4px;
-        cursor: pointer;
-        background-color: #fff;
-        vertical-align: middle;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+
+
+/* Cuando ESTÁ marcado, cambiaremos el borde y el fondo a azul */
+input[type="checkbox"]:checked {
+    background-color: #2196F3; 
+    border-color: #2196F3;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px rgba(33, 150, 243, 0.5);
+}
+
+/* Se agrega la marca de verificación con un pseudo-elemento */
+input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: 2px 5px;
+}
+
+.errorCheckbox{
+    /* Cuando NO está marcado, el borde será rojo */
+    border: 2px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    vertical-align: middle;
 }
 
 .error{
