@@ -1,6 +1,8 @@
 # login-registro
 
-Para realizar el formulario, hemos seguido los requisitos funcionales, usando todos los campos requeridos y hemos añadido un nombre de usuario, marcando qué campos son obligatorios y comprobando con expresiones regulares que los datos introducidos son correctos. También se comprueba que las contraseñas coincidan y que la casilla de política de privacidad esté marcada. También hemos cumplido con los requisitos técnicos, excepto la realización de tests funcionales. La interactividad con el usuario se consigue con el botón reactivo y el marcado en rojo de las casillas erróneas, además de mostrar un mensaje de cómo debe completarse. Cuando todos los datos son correctos, se avisa al usuario mediante un alert. Se ha desactivado el refresco de la página y no se han usado frameworks.
+Para realizar el formulario, hemos seguido los requisitos funcionales, usando todos los campos requeridos y un campo de nombre de usuario añadido, marcando qué campos son obligatorios y comprobando con expresiones regulares que los datos introducidos son correctos. También se comprueba que las contraseñas coincidan y que la casilla de política de privacidad se haya marcado. También hemos cumplido con los requisitos técnicos. La interactividad con el usuario se consigue con animaciones reactivas en el botón y con el marcado en rojo de las casillas erróneas, además de mostrar un mensaje de cómo debe completarse. Cuando todos los datos son correctos, se avisa al usuario mediante un alert. Se ha desactivado el refresco de la página y no se han usado frameworks.
+
+Se incluyen tests de aceptación mediante Selenium, ejecutables mediante su extensión abriendo el archivo de la carpeta test. 
 
 Sobre las recomendaciones WCAG 2.0 hemos tenido en cuenta:<br>
     - Marcar con un asterisco las casillas obligatorias y explicar en una leyenda al comienzo del formulario el significado del símbolo.
