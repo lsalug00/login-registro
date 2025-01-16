@@ -107,17 +107,20 @@ input[type=submit] {
     font-weight: bold;
     font-size: 1rem;
     margin-top: 30px;
+    margin-bottom: 80px;
     width: 130px;
     height: 35px;
     transition-duration: 0.15s;
-    background-color: white;
-    border: 2px solid black;
+    color: #ebebeb;
+    background-color: #181818;
+    border: 2px solid #ebebeb;
     border-radius: 5px;
 }
 
 input[type=submit]:hover {
     cursor: pointer;
     transform: translateY(-1px);
+    background-color: #383838;
     box-shadow: 2px 3px gray;
 }
 
@@ -189,16 +192,13 @@ input[type="checkbox"]:checked::after {
     display: none;
 }
 
-a:link{
-    
-}
-
 a:visited{
     color: mediumpurple;
 }
 
 footer{
     width: 100%;
+    color: black;
     background-color: #ebebeb;
     border-top: 4px solid gray;
 }
@@ -206,11 +206,13 @@ footer{
 footer p{
     font-size: 16px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .contenedor-redes{
     margin-top: -10px;
     margin-bottom: 5px;
+    justify-self: center;
 }
 
 .contenedor-redes img{
