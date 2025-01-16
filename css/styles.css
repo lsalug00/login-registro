@@ -224,3 +224,8 @@ footer p{
 .contenedor-redes img:hover{
     cursor: pointer;
 }
+
+.footerLogin{
+    position: fixed;
+    bottom: 0;
+}
